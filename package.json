@@ -1,0 +1,24 @@
+{
+  "name": "serviceworker-events",
+  "version": "1.0.0",
+  "description": "Helpers for managing service worker events",
+  "module": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://www.github.com/jharris4/serviceworker-events.git"
+  },
+  "keywords": [
+    "serviceworker",
+    "events"
+  ],
+  "author": "Olivier Tassinari <olivier.tassinari@gmail.com> (https://github.com/oliviertassinari)",
+  "contributors": [
+    "Olivier Tassinari <olivier.tassinari@gmail.com> (https://github.com/oliviertassinari)",
+    "Jon Harris (https://github.com/jharris4) "
+  ],
+  "license": "MIT"
+}
