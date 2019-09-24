@@ -1,12 +1,19 @@
 {
   "name": "serviceworker-events",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helpers for managing service worker events",
-  "module": "src/index.js",
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "files": [
-    "src"
+    "src",
+    "lib",
+    "es"
   ],
-  "scripts": {},
+  "scripts": {
+    "clean": "porter-babel-clean",
+    "build": "porter-babel",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
   "repository": {
     "type": "git",
     "url": "https://www.github.com/jharris4/serviceworker-events.git"
@@ -20,5 +27,8 @@
     "Olivier Tassinari <olivier.tassinari@gmail.com> (https://github.com/oliviertassinari)",
     "Jon Harris (https://github.com/jharris4) "
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@porterjs/lib": "^1.0.31"
+  }
 }
